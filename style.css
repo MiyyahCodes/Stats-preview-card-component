@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+    background: hsl(233, 47%, 7%);
+    padding-top: 175px;
+    margin: auto;
+    width:900px;
+}
+ .main-div{
+    display: flex;
+    
+}
+
+.content,
+.img{
+    width: 450px;
+}
+
+.desktop{
+    width: 440px;
+    height: 100%;
+    display: block;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+.mobile{
+    display: none;
+}
+
+h1,
+.flex,
+.attribution{
+    color: hsl(0, 0%, 100%);
+}
+p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 14px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.flex-p{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 1px;
+}
+
+.content{
+    background-color: hsl(244, 38%, 16%, 0.98);
+    padding: 20px 75px 10px 40px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.purple{
+    color: hsl(277, 64%, 61%);
+}
+
+.attribution {
+    margin-top: 15px;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} 
+
+
+
+ @media screen and (max-width: 375px) {
+    body {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+    .main-div{
+        display: block;
+    }
+    .column-reverse {
+        transform: scaleY(-1);
+      }
+    .img,
+    .content{
+    width:80%;
+    }
+    .mobile{
+        display: block;
+        width: 119%;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+    }
+    .desktop{
+       display: none; 
+    }
+    .content{
+        border-bottom-right-radius: 13px;
+        border-bottom-left-radius: 13px;
+        border-top-left-radius: 0px;
+        padding: 20px 30px;
+    }
+    .flex{
+        display: block;
+        justify-content: space-between;
+    }
+    p{
+        font-size: 17px;
+    }
+} 
